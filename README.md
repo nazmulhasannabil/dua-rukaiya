@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🕋 Dua Ruqyah – Islamic Supplications Web App
 
 A modern and responsive web application built with **Next.js 16**, designed to display **daily Duas and Ruqyah** in Arabic along with transliteration and translation.  
@@ -57,3 +58,4 @@ dua_ruqyah/
 ├── postcss.config.mjs
 ├── README.md
 └── tsconfig.json
+
