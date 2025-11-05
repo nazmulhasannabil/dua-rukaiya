@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🕋 Dua Ruqyah – Islamic Supplications Web App
 
-## Getting Started
+A modern and responsive web application built with **Next.js 16**, designed to display **daily Duas and Ruqyah** in Arabic along with transliteration and translation.  
+This project aims to make authentic Duas accessible in a clean, minimal, and mobile-friendly interface.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 📖 **Beautiful Dua Collection** – Browse essential Islamic supplications with Arabic, transliteration, and English translation.
+- ⚡ **Static Site Generation (SSG)** – Pre-rendered for ultra-fast loading and better SEO.
+- 🌙 **Category-based Organization** – Morning, Evening, Travel, Sleep, Protection, and more.
+- 💠 **Modern UI** – Styled with Tailwind CSS for a soft, minimalist look.
+- 🧭 **Responsive Design** – Works perfectly on mobile, tablet, and desktop.
+- 🎨 **React Icons Integration** – Clean and accessible iconography.
+- 🔍 **Ready for API Integration** – Easily extendable with real Dua APIs or JSON files.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+| Technology | Purpose |
+|-------------|----------|
+| [Next.js 16](https://nextjs.org/) | React framework for SSG and SSR |
+| [React 19](https://react.dev/) | UI rendering |
+| [Tailwind CSS 4](https://tailwindcss.com/) | Modern utility-first styling |
+| [React Icons](https://react-icons.github.io/react-icons/) | Icon library |
+| TypeScript | Optional type safety (supported) |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Folder Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Below is the organized folder structure for this project:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+dua_ruqyah/
+├── .next/
+├── app/
+│   ├── component/
+│   │   ├── Header.tsx
+│   │   ├── RightSideBar.tsx
+│   │   ├── SecondSideBar.tsx
+│   │   └── SideBar.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── node_modules/
+├── public/
+│   └── dua.json
+├── .gitignore
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── README.md
+└── tsconfig.json
