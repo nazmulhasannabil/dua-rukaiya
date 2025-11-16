@@ -26,22 +26,22 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable}`}>
       <body className={`${poppins.className}`}>
-        <div className="min-h-screen flex">
+        <div className="min-h-screen flex flex-col md:flex-row">
           <Sidebar />
-          <div className="flex flex-1 ml-16">
-            {/* 20% width for SecondSideBar */}
-            <div className="w-[20%] min-w-[250px] sticky top-0 h-screen ">
+          <div className="flex flex-1 flex-col md:flex-row md:ml-16">
+            {/* SecondSideBar - hidden on mobile, shown on md and up */}
+            <div className="hidden md:block md:w-[20%] md:min-w-[200px] lg:min-w-[250px] sticky top-0 h-screen">
               <SecondSideBar />
             </div>
 
-            {/* 60% width for main content */}
-            <div className="w-[60%] min-w-[600px]">
+            {/* Main content - full width on mobile, 60% on md and up */}
+            <div className="w-full md:w-[60%] min-w-0">
               <Header />
-              <main className="pt-16 overflow-y-auto">{children}</main>
+              <main className="pt-16 overflow-y-auto px-2 sm:px-4 md:px-6">{children}</main>
             </div>
 
-            {/* 20% width for RightSideBar */}
-            <div className="w-[20%] min-w-[250px] sticky top-0 h-screen">
+            {/* RightSideBar - hidden on mobile and md, shown on lg and up */}
+            <div className="hidden lg:block lg:w-[20%] lg:min-w-[250px] sticky top-0 h-screen">
               <RightSideBar />
             </div>
           </div>
@@ -50,5 +50,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-

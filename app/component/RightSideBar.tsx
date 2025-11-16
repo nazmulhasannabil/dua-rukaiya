@@ -11,7 +11,7 @@ export default function RightSideBar() {
 
   return (
     // hidden on mobile and md, visible from lg and up
-    <aside className="hidden md:block mt-16 w-72 lg:w-72 h-screen bg-white border-l border-gray-200 overflow-y-auto fixed right-0">
+    <aside className="hidden lg:block mt-16 w-72 h-screen bg-white border-l border-gray-200 overflow-y-auto fixed right-0">
       <div className="p-4">
 
         {/* Language Dropdown */}
